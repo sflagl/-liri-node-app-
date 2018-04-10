@@ -1,12 +1,17 @@
 
-module.exports = {
+console.log('this is loaded');
 
-  consumer_key: 'GAFeWnEvSPdtjDxYtdHEJmrhY',
-  consumer_secret: 'twXH4Mbv9gJBnDFm92z1bWep3ocPf4CwuoNYFUPpOJW2VOBzgW',
-  access_token_key: '964346940719845377-iuljZ96mtfwhYBiz2ZO9a7gH891I40q',
-  access_token_secret: 'cAHD7CwFkG3pTErAbGe709OnCHuvWVkfMFEcpS6i3qCfh'
-}
+exports.twitter = {
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+};
 
+exports.spotify = {
+  id: process.env.SPOTIFY_ID,
+  secret: process.env.SPOTIFY_SECRET
+};
 // var Spotify = require('node-spotify-api');
 // var Twitter = require('twitter');
 
